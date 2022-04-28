@@ -1,7 +1,7 @@
 {
   "name": "blivedm-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "bilibili 直播websocket node版",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
