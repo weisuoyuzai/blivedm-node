@@ -1,4 +1,10 @@
 # blivedm-node
+安裝
+```
+npm install blivedm-node
+```
+
+使用方法
 ```javascript
 const BlivedmClient = require('blivedm-node/BlivedmClient');
 
