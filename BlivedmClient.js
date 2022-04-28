@@ -63,5 +63,3 @@ class BlivedmClient extends EventEmitter {
 }
 
 module.exports = BlivedmClient;
-
-export default BlivedmClient;
