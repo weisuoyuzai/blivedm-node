@@ -1,0 +1,18 @@
+{
+  "name": "blivedm-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --inspect main.js"
+  },
+  "author": "xiaoyuyu",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7",
+    "pako": "^2.0.4",
+    "websocket": "^1.0.34"
+  }
+}
