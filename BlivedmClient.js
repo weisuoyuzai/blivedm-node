@@ -60,6 +60,9 @@ class BlivedmClient extends EventEmitter {
       }, 30000);
     });
   }
+  stop(){
+    this.wsclient.abort()
+  }
 }
 
 module.exports = BlivedmClient;
