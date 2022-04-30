@@ -1,7 +1,7 @@
 const BlivedmClient = require('./BlivedmClient.js');
 
-const blivedmClient = new BlivedmClient(5279);
-
+const blivedmClient = new BlivedmClient(5050);
+global.blivedmClient = blivedmClient;
 blivedmClient.on('getRoomInfoError', (err) => {
   console.log(err);
 });

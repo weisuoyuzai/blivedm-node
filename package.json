@@ -1,6 +1,6 @@
 {
   "name": "blivedm-node",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "bilibili 直播websocket node版",
   "main": "main.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.7",
     "pako": "^2.0.4",
-    "websocket": "^1.0.34"
+    "websocket": "^1.0.34",
+    "ws": "^8.5.0"
   }
 }
