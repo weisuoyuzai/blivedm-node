@@ -47,14 +47,30 @@ class BlivedmClient extends EventEmitter {
         let res = decode(data);
         res.forEach((item) => {
           // console.log(item.info);
+          console.log(item);
           // console.log(`${item.info[2][1]}:${item.info[1]}`);
           this.emit(item.cmd, item);
         });
       }
     });
+
+    this.wsclient.on('error', (e) => {
+      this.emit('error', e);
+    });
+
+    this.wsclient.on('close', (code, reason) => {
+      console.log('close:', code, reason);
+      if (code == 1006) {
+      }
+    });
   }
   stop() {
-    this.wsclient.terminate();
+    this.wsclient.close(1000, 'stop');
+  }
+  reconnect() {
+    console.log(`roomid:${this.roomid} retrying to reconnect...`);
+    this.stop();
+    this.init();
   }
 }
 

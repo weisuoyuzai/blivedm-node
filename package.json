@@ -1,6 +1,6 @@
 {
   "name": "blivedm-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "bilibili 直播websocket node版",
   "main": "main.js",
   "scripts": {
